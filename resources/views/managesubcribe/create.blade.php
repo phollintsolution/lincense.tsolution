@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Add New Product</h2>
+                <h2>Add New Manage Subcribe</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="#"> Back</a>
+                <a class="btn btn-primary" href="{{ route('managesubcribe.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -27,6 +27,47 @@
     	@csrf
          
          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="form-group">
+                   <strong>Clients Email::</strong>
+                   <select class="custom-select">
+                        <option selected>select...</option>
+                        <option value="1">aba.info@gmail.com</option>
+                        <option value="2">lolc.info@gmail.com</option>
+                        <option value="3">amk.info@gmail.com</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="form-group">
+                    <strong>Clients Email:</strong>
+                    <input type="text" name="name" class="form-control " placeholder="Name" readonly>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="form-group">
+                    <strong>Name:</strong>
+                    <input type="text" name="name" class="form-control" placeholder="Name" readonly>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="form-group">
+                    <strong>Clients Email:</strong>
+                    <input type="text" name="name" class="form-control " placeholder="Name" readonly>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="form-group">
+                    <strong>Name:</strong>
+                    <input type="text" name="name" class="form-control" placeholder="Name" readonly>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="form-group">
+                    <strong>Name:</strong>
+                    <input type="text" name="name" class="form-control" placeholder="Name" readonly>
+                </div>
+            </div>
 		    <div class="col-xs-12 col-sm-12 col-md-12">
 		        <div class="form-group">
 		            <strong>Name:</strong>

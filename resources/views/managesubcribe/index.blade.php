@@ -8,8 +8,8 @@
             </div>
             <div class="pull-right">
                
-               @can('product-create')
-                <a class="btn btn-success" href="#"> Create New Product</a>
+               @can('managesubcribe-create')
+                <a class="btn btn-success" href="{{ route('managesubcribe.create') }}"> Create New Manage Sub</a>
                 @endcan
                 
             </div>
