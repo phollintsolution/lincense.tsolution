@@ -1,0 +1,12 @@
+.navbar-expand-md .navbar-nav .dropdown-menu{
+	position: absolute;
+	left: -90px !important;
+	top: 45px !important;
+	border: 0;
+	border-radius: 0;
+	background: #ddd;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+	background: 0
+}
+
