@@ -18,6 +18,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index')->name('home');
 
+Route::POST('api/verify/productkpi/','AController@AController');
+
 
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles','RoleController');
@@ -25,3 +27,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('products','ProductController');
     Route::resource('managesubcribe','ManageSubcribeController');
 });
+
+
+
