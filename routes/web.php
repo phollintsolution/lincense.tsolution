@@ -24,6 +24,7 @@ Route::POST('api/verify/productkpi/','AController@AController');
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles','RoleController');
     Route::resource('users','UserController');
+    Route::resource('clients','ClientController');
     Route::resource('products','ProductController');
     Route::resource('managesubcribe','ManageSubcribeController');
 });

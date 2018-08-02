@@ -10,13 +10,12 @@ use Illuminate\Support\Facades\Input;
 class AController extends Controller
 {
     public function AController(request $request){
-        $customer_id  = $request->customer_id;
-        $name  = $request->name;
-        $tracking_product_kpi = DB::select("select * from users where email = '$customer_id' AND name = '$name'");
-
+        $email  = $request->email;
+        $current_date  = $request->current_date;
+        
+        $tracking_product_kpi = DB::select("select * from tsolution_clients where email = '$email' 
+        	AND expired_date >= '$current_date' ");
      	 return $tracking_product_kpi;
-
-
     }
 
 }
